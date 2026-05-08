@@ -1,0 +1,154 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+:root {
+  --green:     #00ff41;
+  --green-dim: #00aa2a;
+  --green-dark:#003311;
+  --amber:     #ffb000;
+  --bg:        #000000;
+  --bg2:       #050a05;
+  --border:    #00ff41;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: var(--bg);
+  color: var(--green);
+  font-family: 'Press Start 2P', monospace;
+  font-size: 10px;
+  line-height: 1.8;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* CRT 스캔라인 오버레이 */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(0,0,0,0.25) 2px,
+    rgba(0,0,0,0.25) 4px
+  );
+  pointer-events: none;
+  z-index: 9999;
+}
+
+/* CRT 화면 가장자리 빛번짐 */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(ellipse at center, transparent 60%, rgba(0,0,0,0.7) 100%);
+  pointer-events: none;
+  z-index: 9998;
+}
+
+/* 깜빡임 */
+@keyframes flicker {
+  0%,100% { opacity:1; }
+  92%      { opacity:1; }
+  93%      { opacity:0.85; }
+  94%      { opacity:1; }
+  96%      { opacity:0.9; }
+  97%      { opacity:1; }
+}
+
+/* 커서 깜빡임 */
+@keyframes blink {
+  0%,100% { opacity:1; }
+  50%      { opacity:0; }
+}
+
+/* 텍스트 글로우 */
+.glow {
+  text-shadow: 0 0 4px var(--green), 0 0 8px var(--green-dim);
+}
+
+.glow-amber {
+  color: var(--amber);
+  text-shadow: 0 0 4px var(--amber);
+}
+
+/* 픽셀 테두리 박스 */
+.pixel-box {
+  border: 2px solid var(--green);
+  box-shadow: 0 0 6px var(--green-dim), inset 0 0 6px rgba(0,255,65,0.05);
+  background: var(--bg2);
+}
+
+/* 선택지 버튼 */
+.choice-btn {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 10px 14px;
+  border: 2px solid var(--green-dim);
+  background: transparent;
+  color: var(--green);
+  font-family: 'Press Start 2P', monospace;
+  font-size: 9px;
+  line-height: 1.8;
+  cursor: pointer;
+  transition: all 0.1s;
+  margin-bottom: 6px;
+}
+
+.choice-btn:hover, .choice-btn:focus {
+  border-color: var(--green);
+  background: var(--green-dark);
+  box-shadow: 0 0 8px var(--green-dim);
+  outline: none;
+}
+
+.choice-btn:active {
+  transform: translate(2px, 2px);
+}
+
+/* 인터페이스 로그 */
+.iface-success  { color: var(--green);  }
+.iface-failure  { color: #ff4444; text-shadow: 0 0 4px #ff0000; }
+.iface-critical { color: var(--amber);  text-shadow: 0 0 4px var(--amber); }
+.iface-info     { color: #44aaff; text-shadow: 0 0 4px #0066ff; }
+
+/* 타이프라이터 */
+@keyframes typing {
+  from { width: 0; }
+  to   { width: 100%; }
+}
+
+/* 입력창 */
+.game-input {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid var(--green);
+  color: var(--green);
+  font-family: 'Press Start 2P', monospace;
+  font-size: 10px;
+  outline: none;
+  width: 100%;
+  padding: 4px 0;
+}
+
+.game-input::placeholder {
+  color: var(--green-dim);
+  opacity: 0.6;
+}
+
+/* 스크롤바 */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--green-dim); }
+
+/* 구분선 */
+.pixel-divider {
+  border: none;
+  border-top: 2px solid var(--green-dim);
+  margin: 12px 0;
+  box-shadow: 0 0 4px var(--green-dark);
+}
