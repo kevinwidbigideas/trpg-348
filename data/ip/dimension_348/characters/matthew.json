@@ -1,0 +1,31 @@
+{
+  "character_id": "matthew",
+  "name": "매튜",
+  "tier": "tertiary",
+  "origin": "화전민 마을 주민",
+  "persona": {
+    "motivation": "마을 평화 유지",
+    "values": ["소박함", "공동체"],
+    "speech_style": "편안하고 솔직함. 뻐드렁니가 특징.",
+    "example_lines": [
+      "언덕너머에서 내려오는걸 보니 로크빌에서 오는모양이지?",
+      "이 마을에 사연 없는 사람이 어디 있겠는가."
+    ]
+  },
+  "stats": {
+    "combat": 30,
+    "perception": 50,
+    "charisma": 60,
+    "stealth": 35
+  },
+  "relations": {
+    "hector": { "type": "우호적 동료", "level": 70 },
+    "hajun": { "type": "우호적 주민", "level": 60 },
+    "joy_josephine": { "type": "이웃", "level": 65 }
+  },
+  "initial_state": {
+    "location": "nameless_village",
+    "alive": true,
+    "accessible": true
+  }
+}

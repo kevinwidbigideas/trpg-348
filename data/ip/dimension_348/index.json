@@ -1,0 +1,30 @@
+{
+  "ip_id": "dimension_348_v1",
+  "title": "348차원",
+  "version": "1.0",
+  "genre": ["이세계", "헌터물", "중세판타지"],
+  "user_entry_framing": "지구 멸망 생존자 — 이세계 전이자",
+  "interface_system": true,
+  "mvp_chapter": 1,
+  "mvp_tick_range": "0 ~ 6",
+  "mvp_sandbox": ["forest", "nameless_village"],
+  "files": {
+    "characters": [
+      "characters/hajun.json",
+      "characters/kenshin.json",
+      "characters/joy_josephine.json",
+      "characters/hector.json",
+      "characters/shuned.json",
+      "characters/matthew.json"
+    ],
+    "world": [
+      "world/physics.json",
+      "world/geography.json",
+      "world/communication.json"
+    ],
+    "timeline": [
+      "timeline/canon_events.json",
+      "timeline/causality_map.json"
+    ]
+  }
+}

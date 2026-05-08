@@ -1,0 +1,37 @@
+{
+  "locations": [
+    {
+      "id": "forest",
+      "name": "이름없는 숲",
+      "type": "자연",
+      "accessible": true,
+      "description": "화전민 마을 주변 울창한 숲. 하운드 등 몬스터 출몰. 냇가 포함.",
+      "adjacent": ["nameless_village"],
+      "danger_level": "medium"
+    },
+    {
+      "id": "nameless_village",
+      "name": "이름없는 화전민 마을",
+      "type": "은거지",
+      "accessible": true,
+      "description": "사연 있는 자들이 모여 사는 소규모 공동체. 헥터/조이 거주. 언덕 너머 로크빌 방향.",
+      "adjacent": ["forest"],
+      "danger_level": "low",
+      "note": "헥터가 4년 전 정착 후 범죄자 소탕. 현재 치안 안정."
+    }
+  ],
+  "out_of_bounds": [
+    {
+      "id": "rokville",
+      "name": "로크빌",
+      "distance": "도보 3일",
+      "note": "1챕터 범위 외. 이동 시도 시 세계관 검증 에이전트가 제한."
+    },
+    {
+      "id": "holy_capital",
+      "name": "신성제국 수도",
+      "distance": "수 주",
+      "note": "1챕터 범위 외."
+    }
+  ]
+}

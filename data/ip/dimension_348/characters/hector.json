@@ -1,0 +1,37 @@
+{
+  "character_id": "hector",
+  "name": "헥터",
+  "alias": "철사자",
+  "tier": "primary",
+  "origin": "신성제국 출신 전직 최상급 소드 엑스퍼트",
+  "persona": {
+    "motivation": "조이 보호. 과거와 단절한 조용한 삶.",
+    "values": ["책임감", "의리", "단순함"],
+    "background": "한때 '철사자'로 이름 날린 최상급 소드 엑스퍼트. 조이를 데리고 도주 후 마을 정착. 이름 버림.",
+    "speech_style": "호탕하고 여유로움. 조이 앞에서만 한없이 약해짐.",
+    "example_lines": [
+      "늙고 약한 놈이로군. 무리에서 배제되어 떠돌다 온 모양이야.",
+      "철사자라…그 이름은 버린지 오래다. 지금은 그저 헥터다.",
+      "조촐하지? 그래도 사람사는 곳이니."
+    ]
+  },
+  "combat_ability": "소드마스터급 (오러소드 사용 가능)",
+  "stats": {
+    "combat": 95,
+    "perception": 75,
+    "charisma": 70,
+    "stealth": 40
+  },
+  "relations": {
+    "joy_josephine": { "type": "피보호자/딸 같은 존재", "level": 95 },
+    "hajun": { "type": "인정하는 젊은이", "level": 75 },
+    "shuned": { "type": "강한 적대", "level": 5 },
+    "matthew": { "type": "우호적 동료", "level": 70 }
+  },
+  "initial_state": {
+    "location": "nameless_village",
+    "alive": true,
+    "accessible": true,
+    "note": "순찰 중 조이 위기 신호로 숲 진입. tick 3에 합류."
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "causality_id": "canon_348_ch1_causality",
+  "edges": [
+    {
+      "from": "earth_destruction",
+      "to": "forest_awakening",
+      "type": "triggers",
+      "note": "지구 멸망이 하준 전이를 발생시킴"
+    },
+    {
+      "from": "forest_awakening",
+      "to": "hound_encounter",
+      "type": "enables",
+      "note": "숲 이동이 조이와의 조우로 이어짐"
+    },
+    {
+      "from": "hound_encounter",
+      "to": "hector_arrival",
+      "type": "triggers",
+      "note": "조이의 위기 신호가 헥터를 부름"
+    },
+    {
+      "from": "hector_arrival",
+      "to": "village_daily_life",
+      "type": "enables",
+      "note": "마을 동행으로 정착 기간 시작"
+    },
+    {
+      "from": "village_daily_life",
+      "to": "kenshin_awakening",
+      "type": "precedes",
+      "note": "마을 정착 중 슈네드 접근"
+    },
+    {
+      "from": "kenshin_awakening",
+      "to": "joy_identity_reveal",
+      "type": "triggers",
+      "note": "슈네드 사건이 조이 정체 공개의 계기가 됨"
+    }
+  ],
+  "bottlenecks": [
+    {
+      "event_id": "hound_encounter",
+      "note": "조이 생존 필수. 실패 시 1챕터 메인 루트 불가."
+    },
+    {
+      "event_id": "joy_identity_reveal",
+      "note": "1챕터 필수 엔딩. 분기 있으나 이벤트 자체는 발생."
+    }
+  ]
+}

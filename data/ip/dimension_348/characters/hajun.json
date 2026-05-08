@@ -1,0 +1,52 @@
+{
+  "character_id": "hajun",
+  "name": "하준",
+  "tier": "protagonist",
+  "origin": "지구 생존자 (한국, 23세)",
+  "persona": {
+    "motivation": "지구와 348차원을 구하는 계약 이행, 포식자 강림 저지",
+    "values": ["의리", "침착함", "성장"],
+    "background": "고아 출신, 은사(딸: 은혜)에게 키워짐. 취직 직전 지구 멸망 생존.",
+    "speech_style": "현대적, 솔직함, 가끔 유머. 속마음은 인터페이스로 독백."
+  },
+  "stats_chapter1_start": {
+    "level": 1,
+    "근력": 12,
+    "민첩": 14,
+    "지구력": 14,
+    "마나": 0,
+    "서클": 0
+  },
+  "stats_chapter1_end": {
+    "level": 3,
+    "근력": 30,
+    "민첩": 25,
+    "지구력": 25,
+    "마나": "초기",
+    "서클": 1
+  },
+  "stats": {
+    "combat": 20,
+    "perception": 40,
+    "charisma": 50,
+    "stealth": 14
+  },
+  "skills": [
+    { "id": "interface_ex", "name": "권능-인터페이스(EX)", "grade": "EX", "desc": "레벨/스탯/퀘스트/칭호 시스템 사용 가능" },
+    { "id": "indomitable_spirit", "name": "불굴의 정신(S)", "grade": "S", "desc": "정신계 마법 면역, 저주 면역, 극한 상황 침착" },
+    { "id": "growth_blessing", "name": "성장의 축복(S)", "grade": "S", "desc": "수련 효과 상승" },
+    { "id": "communication_blessing", "name": "소통의 축복(C)", "grade": "C", "desc": "언어 자동 습득" }
+  ],
+  "relations": {
+    "kenshin": { "type": "인도자/스승", "level": 90, "note": "심상공간에서만 소통" },
+    "joy_josephine": { "type": "보호 대상/동생같은 존재", "level": 80 },
+    "hector": { "type": "은인/신뢰", "level": 75 },
+    "matthew": { "type": "우호적 주민", "level": 60 }
+  },
+  "initial_state": {
+    "location": "forest",
+    "alive": true,
+    "condition": "부상 (첫 진입 시)",
+    "special": "인터페이스 보유, 인도자 오류 상태 (tick 5 이전)"
+  }
+}

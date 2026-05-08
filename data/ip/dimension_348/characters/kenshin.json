@@ -1,0 +1,36 @@
+{
+  "character_id": "kenshin",
+  "name": "켄신",
+  "title": "패배한 세계의 초월자",
+  "tier": "primary",
+  "origin": "불명 (다른 차원 패배 세계의 초월자)",
+  "persona": {
+    "motivation": "하준 성장 지원을 통한 포식자 저지",
+    "values": ["실력주의", "냉철함", "성장"],
+    "speech_style": "오만함, 반말, 무심한 독설. 인정할 땐 나지막하게.",
+    "example_lines": [
+      "- 네가는 반말이고, 꼬맹아. 인도자님이시다. -",
+      "- 방심은 실전에서 바로 죽음으로 이어지지. -",
+      "그래도 어느정도 쓸 만해졌군."
+    ]
+  },
+  "stats": {
+    "combat": 100,
+    "perception": 100,
+    "charisma": 30,
+    "stealth": 90
+  },
+  "combat_ability": "초월자급. 하준 스탯 올라갈수록 맞춰 수준 상승.",
+  "location": "심상공간 (하준 내면)",
+  "activation_condition": "하준이 심상공간 진입 시 또는 위기 상황 자동 개입 (tick 5~)",
+  "relations": {
+    "hajun": { "type": "피훈련자", "level": 70 }
+  },
+  "initial_state": {
+    "location": "심상공간",
+    "alive": true,
+    "accessible": false,
+    "error_state": true,
+    "note": "tick 5 이전: 인터페이스에 오류로 표기. tick 5: 슈네드 전투 위기에서 자동 각성."
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "character_id": "joy_josephine",
+  "name": "조이 / 조세핀 폰 아시오네",
+  "tier": "primary",
+  "origin": "신성제국 황녀 (4황녀)",
+  "age": 16,
+  "persona": {
+    "motivation": "신분 숨기고 생존. 수도 귀환 목표 (tick 6 이후).",
+    "values": ["은혜", "신뢰", "용기"],
+    "background": "4년 전 황실 내부 사정으로 헥터와 도주. 이름없는 마을에서 은거.",
+    "speech_style": "밝고 활발. 예절 배어있음. 헥터 앞에서 강단있음.",
+    "example_lines": [
+      "도망치세요!",
+      "헥터 아저씨! 보고만 있지 말고 어서 도와주세요!",
+      "제 이름은 조이가 아닌 조세핀이에요."
+    ]
+  },
+  "stats": {
+    "combat": 15,
+    "perception": 55,
+    "charisma": 80,
+    "stealth": 60
+  },
+  "secret": "신성제국 4황녀 조세핀. 1황자의 여동생. tick 6에 정체 공개.",
+  "relations": {
+    "hector": { "type": "보호자/아버지 같은 존재", "level": 95 },
+    "hajun": { "type": "은인/오빠", "level": 80 },
+    "first_prince": { "type": "오빠 (1황자)", "level": 70, "note": "하준을 죽은 줄 알고 있음" }
+  },
+  "initial_state": {
+    "location": "forest",
+    "alive": true,
+    "accessible": true,
+    "identity_hidden": true,
+    "note": "tick 2에 숲에서 하운드에게 쫓기다 하준과 조우."
+  }
+}

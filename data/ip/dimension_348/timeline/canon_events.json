@@ -1,0 +1,109 @@
+{
+  "timeline_id": "canon_348_ch1",
+  "events": [
+    {
+      "event_id": "earth_destruction",
+      "tick": 0,
+      "location": "void",
+      "name": "지구 멸망 & 경계의 신과 계약",
+      "description": "포식자 차원 충돌로 지구 파괴. 경계의 신이 1294명 생존자에게 권능 분배 후 소멸.",
+      "importance": "critical",
+      "divergence_possible": false,
+      "involved_characters": ["hajun"],
+      "canon_outcome": "하준 348차원 전이, 인터페이스 부여"
+    },
+    {
+      "event_id": "forest_awakening",
+      "tick": 1,
+      "location": "forest",
+      "name": "숲에서 깨어남 & 인터페이스 첫 확인",
+      "description": "하준이 숲 공터에서 깨어나 인터페이스를 처음 확인. 인도자는 오류 상태.",
+      "importance": "high",
+      "divergence_possible": true,
+      "involved_characters": ["hajun"],
+      "canon_outcome": "냇가 방향으로 이동 시작",
+      "divergence_options": [
+        "숲 깊이 들어간다 → Macro 스킵 후 마을 방향 재유도",
+        "그 자리에서 기다린다 → 시간 경과, 몬스터 조우 위험"
+      ]
+    },
+    {
+      "event_id": "hound_encounter",
+      "tick": 2,
+      "location": "forest",
+      "name": "조이와 하운드 조우",
+      "description": "냇가에서 하운드에게 쫓기는 조이와 조우. 하준이 방패막이 역할.",
+      "importance": "high",
+      "divergence_possible": true,
+      "involved_characters": ["hajun", "joy_josephine"],
+      "canon_outcome": "하준이 조이를 먼저 도망치게 하고 하운드와 대치",
+      "divergence_options": [
+        "조이를 무시하고 도망친다 → 조이 사망 위험, 퀘스트 실패",
+        "하운드를 단독으로 처치한다 → DC 70 판정 (저레벨엔 거의 불가)",
+        "조이에게 먼저 도망치라 한다 → 캐논 진행"
+      ]
+    },
+    {
+      "event_id": "hector_arrival",
+      "tick": 3,
+      "location": "forest",
+      "name": "헥터 합류 & 하운드 처치",
+      "description": "조이가 헥터를 데리고 복귀. 헥터가 하운드 처치. 화전민 마을로 이동.",
+      "importance": "high",
+      "divergence_possible": true,
+      "involved_characters": ["hajun", "joy_josephine", "hector"],
+      "canon_outcome": "하운드 처치, 마을 도착, 헥터/조이의 호의 획득",
+      "divergence_options": [
+        "헥터 도착 전 하운드 대실패 → 하준 중상, 헥터가 구출하지만 신뢰도 하락",
+        "마을 동행 거부 → 단독 행동 루트 (정보 없이 고난도)"
+      ]
+    },
+    {
+      "event_id": "village_daily_life",
+      "tick": 4,
+      "location": "nameless_village",
+      "name": "마을 정착 & 일상 퀘스트",
+      "description": "상처 치료, 매튜와 대화, 헥터의 부탁 수행. 세계관 파악 기간.",
+      "importance": "medium",
+      "divergence_possible": true,
+      "involved_characters": ["hajun", "hector", "joy_josephine", "matthew"],
+      "canon_outcome": "마을 정착. 인터페이스 시스템 파악. 레벨 2~3 달성.",
+      "divergence_options": [
+        "마을을 이탈한다 → 세계관 검증 에이전트가 제한 (장비/체력 부족)",
+        "헥터에게 진실을 말한다 → 반응 분기 발생"
+      ]
+    },
+    {
+      "event_id": "kenshin_awakening",
+      "tick": 5,
+      "location": "nameless_village",
+      "name": "켄신 각성 & 슈네드 등장",
+      "description": "슈네드가 마을에 접근. 위기 상황에서 켄신이 인도자로 자동 각성. 첫 전투 지원.",
+      "importance": "critical",
+      "divergence_possible": true,
+      "involved_characters": ["hajun", "kenshin", "hector", "shuned"],
+      "canon_outcome": "켄신 각성, 소드엑스퍼트 격파, 칭호 <소드엑스퍼트를 쓰러트린 초보자> 획득",
+      "divergence_options": [
+        "슈네드와 대화로 해결한다 → 설득 판정 (DC 80, 매우 어려움)",
+        "헥터에게 전부 맡긴다 → 헥터 단독 처리, 켄신 각성 지연",
+        "켄신 도움으로 처치 → 캐논 진행"
+      ]
+    },
+    {
+      "event_id": "joy_identity_reveal",
+      "tick": 6,
+      "location": "nameless_village",
+      "name": "조이 정체 공개 (1챕터 엔딩)",
+      "description": "슈네드 사건 후 조이가 신성제국 황녀 조세핀임을 밝힘. 수도 귀환 계획 언급.",
+      "importance": "critical",
+      "divergence_possible": true,
+      "involved_characters": ["hajun", "joy_josephine", "hector"],
+      "canon_outcome": "하준이 조이의 정체를 알게 됨. 2챕터 수도 여정 복선.",
+      "divergence_options": [
+        "조이의 정체에 무관심하게 반응 → 관계도 소폭 하락",
+        "신성제국 수배를 이유로 동행 거부 → 단독 루트 분기",
+        "동행 결정 → 캐논 진행, 2챕터 개방"
+      ]
+    }
+  ]
+}
